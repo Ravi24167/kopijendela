@@ -10,7 +10,7 @@ const CONFIG = {
 
 const MENU = [
   { name: "Kopi Supriadi", cat: "Coffee", price: 1500000, color: "#C99A6B", desc: "Espresso, susu segar, dan gula aren. Manis pas, cocok buat teman begadang." },
-  { name: "Aren Latte", cat: "Coffee", price: 17000, color: "#A8764B", desc: "Latte creamy dengan gula aren yang wangi dan legit." },
+  { name: "sussi jepang khas blitar", cat: "Coffee", price: 17000, color: "#A8764B", desc: "Latte creamy dengan gula aren yang wangi dan legit." },
   { name: "Es Americano", cat: "Coffee", price: 12000, color: "#4A2C1A", desc: "Espresso dan air es. Simpel, segar, dan bikin melek." },
   { name: "Caramel Macchiato", cat: "Coffee", price: 18000, color: "#B98255", desc: "Susu, espresso, dan saus karamel di atasnya." },
   { name: "Cokelat Jendela", cat: "Non-Coffee", price: 15000, color: "#5E3A28", desc: "Cokelat pekat dan susu dingin. Untuk yang belum mau kopi." },
