@@ -1,9 +1,7 @@
-/* =========================================================
-   KOPI JENDELA — Pengaturan utama (edit bagian ini saja)
-   ========================================================= */
+
 const CONFIG = {
   whatsapp: "6283851153359",        // format internasional, tanpa + atau 0 di depan
-  instagram: "kopijendela",          // username tanpa @
+  instagram: "@kopijendelaa",          // username tanpa @
   email: "halo@kopijendela.id",
   waGreeting: "Halo Kopi Jendela, saya mau pesan."
 };
