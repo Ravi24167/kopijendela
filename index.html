@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kopi Jendela — Kopi kekinian, harga anak kuliah</title>
+  <meta name="description" content="Kopi Jendela: kopi kekinian dengan harga ekonomis untuk pelajar dan mahasiswa. Pesan lewat WhatsApp.">
+  <meta name="theme-color" content="#1F3A34">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231F3A34'/%3E%3Cpath d='M9 26V14a7 7 0 0 1 14 0v12z' fill='none' stroke='%23F0B24B' stroke-width='2'/%3E%3Cpath d='M16 7v19M9 16h14' stroke='%23F0B24B' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="#home" class="logo" aria-label="Kopi Jendela, ke atas">
+      <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path d="M7 28V14a9 9 0 0 1 18 0v14z" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M16 5v23M7 17h18" stroke="currentColor" stroke-width="2.4"/></svg>
+      Kopi Jendela
+    </a>
+    <nav id="menuNav" class="nav__links" aria-label="Navigasi utama">
+      <a href="#menu">Menu</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#cara-pesan">Cara Pesan</a>
+      <a href="#kontak">Kontak</a>
+      <a href="#" class="btn btn--sm" data-wa>Pesan Sekarang</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menuNav"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <p class="hero__note">Kopi kekinian untuk pelajar &amp; mahasiswa</p>
+        <h1>Kopi Jendela</h1>
+        <p class="hero__tag">Buka jendela, mulai harimu.</p>
+        <p class="hero__desc">Kopi susu, aren latte, dan minuman favorit lainnya. Mulai dari Rp10.000, cukup untuk uang saku.</p>
+        <div class="hero__cta">
+          <a href="#menu" class="btn">Lihat Menu</a>
+          <a href="#" class="btn btn--ghost" data-wa>Pesan Sekarang</a>
+        </div>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <svg viewBox="0 0 400 480" class="window">
+          <defs>
+            <clipPath id="arch"><path d="M40 440V170a160 160 0 0 1 320 0v270z"/></clipPath>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#F6D9A0"/><stop offset="1" stop-color="#FBEBD0"/>
+            </linearGradient>
+          </defs>
+          <g clip-path="url(#arch)">
+            <rect width="400" height="480" fill="url(#sky)"/>
+            <circle class="sun" cx="270" cy="150" r="46" fill="#F0B24B"/>
+            <path d="M0 330q60-40 120-10t130-20 150 20v130H0z" fill="#9DB8A8" opacity=".7"/>
+            <path d="M0 380q90-40 170-10t230-10v90H0z" fill="#6F9483"/>
+          </g>
+          <path d="M40 440V170a160 160 0 0 1 320 0v270z" fill="none" stroke="#1F3A34" stroke-width="14"/>
+          <path d="M200 10v430M40 245h320" stroke="#1F3A34" stroke-width="9"/>
+          <rect x="18" y="436" width="364" height="26" rx="4" fill="#1F3A34"/>
+          <!-- cup on the sill -->
+          <g transform="translate(140 330)">
+            <path d="M0 16h96l-10 84a12 12 0 0 1-12 10H22a12 12 0 0 1-12-10z" fill="#FBF8F3"/>
+            <path d="M4 34h88l-3 26H7z" fill="#7A4A2E"/>
+            <path d="M6 34h84" stroke="#C99A6B" stroke-width="10" opacity=".8"/>
+            <rect x="-4" y="6" width="104" height="14" rx="7" fill="#1F3A34"/>
+            <path d="M96 40q30 0 26 24t-32 24" fill="none" stroke="#FBF8F3" stroke-width="7" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="section" id="menu">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Menu</h2>
+        <p>Harga bersahabat, rasa tetap serius. Klik Pesan untuk langsung kirim ke WhatsApp.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Kategori menu">
+        <button class="tab is-active" role="tab" aria-selected="true" data-cat="all">Semua</button>
+        <button class="tab" role="tab" aria-selected="false" data-cat="Coffee">Coffee</button>
+        <button class="tab" role="tab" aria-selected="false" data-cat="Non-Coffee">Non-Coffee</button>
+      </div>
+      <div class="grid" id="menuGrid"></div>
+      <p class="fine">Harga dan menu contoh, bisa diubah di script.js.</p>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="section section--dark" id="tentang">
+    <div class="wrap about">
+      <h2>Kopi enak tidak harus mahal.</h2>
+      <div class="about__body">
+        <p>Kopi Jendela adalah brand kopi sederhana yang lahir dari satu ide: kopi kekinian seharusnya bisa dinikmati siapa saja, terutama pelajar dan mahasiswa dengan uang saku terbatas.</p>
+        <p>Nama “Jendela” dipilih karena secangkir kopi sering jadi jeda kecil di tengah tugas, kelas, dan deadline, semacam jendela untuk melihat keluar sebentar sebelum lanjut lagi.</p>
+        <p>Kami menjaga menu tetap singkat dan harga tetap ramah, supaya kualitas terjaga dan kamu tidak perlu berpikir dua kali saat memesan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARA PESAN -->
+  <section class="section" id="cara-pesan">
+    <div class="wrap">
+      <div class="section__head">
+        <h2>Cara Pesan</h2>
+        <p>Tidak perlu aplikasi atau akun. Cukup WhatsApp.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Pilih menu</h3><p>Lihat daftar menu dan tentukan minuman favoritmu.</p></li>
+        <li><h3>Kirim pesan</h3><p>Klik tombol Pesan, lalu kirim ke WhatsApp kami.</p></li>
+        <li><h3>Konfirmasi</h3><p>Kami balas dengan total harga, ketersediaan, dan cara pengambilan.</p></li>
+        <li><h3>Bayar &amp; nikmati</h3><p>Selesaikan pembayaran sesuai kesepakatan, lalu minumanmu diproses.</p></li>
+      </ol>
+      <a href="#" class="btn" data-wa>Pesan Sekarang</a>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section class="section section--tint" id="kontak">
+    <div class="wrap contact">
+      <div class="section__head">
+        <h2>Kontak</h2>
+        <p>Tanya menu, pesanan, atau kerja sama? Hubungi kami di sini.</p>
+      </div>
+      <ul class="contact__list">
+        <li><a href="#" data-wa><span>WhatsApp</span><strong data-wa-label></strong></a></li>
+        <li><a href="#" data-ig target="_blank" rel="noopener noreferrer"><span>Instagram</span><strong data-ig-label></strong></a></li>
+        <li><a href="#" data-mail><span>Email</span><strong data-mail-label></strong></a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div>
+      <p class="footer__brand">Kopi Jendela</p>
+      <p class="footer__tag">Buka jendela, mulai harimu.</p>
+    </div>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="#menu">Menu</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#cara-pesan">Cara Pesan</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <p class="footer__copy">© <span id="year">2026</span> Kopi Jendela. Semua hak dilindungi.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
