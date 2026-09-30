@@ -2,14 +2,14 @@
    KOPI JENDELA — Pengaturan utama (edit bagian ini saja)
    ========================================================= */
 const CONFIG = {
-  whatsapp: "083851153359",        // format internasional, tanpa + atau 0 di depan
+  whatsapp: "6283851153359",        // format internasional, tanpa + atau 0 di depan
   instagram: "kopijendela",          // username tanpa @
   email: "halo@kopijendela.id",
   waGreeting: "Halo Kopi Jendela, saya mau pesan."
 };
 
 const MENU = [
-  { name: "Kopi Susu Jendela", cat: "Coffee", price: 1500000, color: "#C99A6B", desc: "Espresso, susu segar, dan gula aren. Manis pas, cocok buat teman begadang." },
+  { name: "Kopi Supriadi", cat: "Coffee", price: 1500000, color: "#C99A6B", desc: "Espresso, susu segar, dan gula aren. Manis pas, cocok buat teman begadang." },
   { name: "Aren Latte", cat: "Coffee", price: 17000, color: "#A8764B", desc: "Latte creamy dengan gula aren yang wangi dan legit." },
   { name: "Es Americano", cat: "Coffee", price: 12000, color: "#4A2C1A", desc: "Espresso dan air es. Simpel, segar, dan bikin melek." },
   { name: "Caramel Macchiato", cat: "Coffee", price: 18000, color: "#B98255", desc: "Susu, espresso, dan saus karamel di atasnya." },
