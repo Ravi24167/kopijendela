@@ -2,7 +2,7 @@
 const CONFIG = {
   whatsapp: "6283851153359",        // format internasional, tanpa + atau 0 di depan
   instagram: "kopijendelaa",          // username tanpa @
-  email: "halo@kopijendela.id",
+  email: "https://ini-guee.vercel.app/",
   waGreeting: "Halo Kopi Jendela, saya mau pesan."
 };
 
